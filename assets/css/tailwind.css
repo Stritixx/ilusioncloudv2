@@ -81,7 +81,7 @@ body {
 
 
 .blob-animation {
-	animation: blob 3s infinite, showBlob .3s .25s both;
+	animation: blob 3s infinite, showBlob .3s both;
 }
 
 

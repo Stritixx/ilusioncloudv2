@@ -2,7 +2,7 @@
 	<IndexBackground />
 
 	<div class="absolute w-full top-[10%]">
-		<div class="relative flex justify-center flex-wrap w-full top-[-20%] overflow-x-hidden py-[300px]">
+		<div class="relative flex justify-center flex-wrap w-full top-[-20%] max-[500px]:top-[-10%] overflow-x-hidden py-[300px]">
 			<div class="absolute w-[200px] h-[600px] bg-blue-500/50 z-40 top-[30%] right-[-350px] rounded-full inline-block pointer-events-none blur-[150px] !rotate-[-35deg] blob-animation"></div>
 
 			<h1 class="max-w-[750px] max-lg:mx-[30px] max-lg:w-full text-gray-300 text-[3.35rem] max-md:text-[2.85rem] max-sm:text-[2.55rem] font-bold text-center leading-normal font-poppins" data-aos="fade-up">The <span class="text-blue-600">easiest</span> way to protect your Discord server!</h1>
