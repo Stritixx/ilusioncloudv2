@@ -1,0 +1,120 @@
+@import "@fontsource/poppins/400.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+* {
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+body {
+ 	@apply bg-backgroundColor;
+}
+
+
+
+
+.media-animate {
+	@apply transition-all;
+	@apply duration-300;
+}
+
+
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+
+
+::-webkit-scrollbar-track {
+	background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,6,19,1) 48%, rgb(2, 6, 8) 100%);
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+	background: #0051ff;
+	border-radius: 5px;
+}
+
+
+
+.drop-enter-active {
+	animation: drop .2s;
+}
+
+
+
+.drop-leave-active {
+	animation: drop .2s reverse;
+}
+
+
+
+@keyframes drop {
+	0% {
+		transform: scale(0);
+		opacity: 0;
+		backdrop-filter: blur(0px);
+	}
+
+	100% {
+		transform: scale(1);
+		opacity: 1;
+		backdrop-filter: blur(10px);
+	}
+}
+
+
+
+
+.blob-animation {
+	animation: blob 3s infinite, showBlob .3s .25s both;
+}
+
+
+
+
+
+@keyframes showBlob {
+	from {
+		opacity: 0;
+	}
+
+
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+
+@keyframes blob {
+    0% {
+      transform: translate(-50%, 0) scale(1);
+      border-radius: 42% 58% 53% 47% / 60% 50% 50% 40%;
+    }
+
+    50% {
+      transform: translate(-50%, 20px) scale(1.05);
+      border-radius: 58% 42% 47% 53% / 40% 60% 40% 60%;
+    }
+	
+    100% {
+      transform: translate(-50%, 0) scale(1);
+      border-radius: 42% 58% 53% 47% / 60% 50% 50% 40%;
+    }
+}
