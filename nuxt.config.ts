@@ -5,7 +5,12 @@ export default defineNuxtConfig({
 	modules: [
 	 '@nuxtjs/tailwindcss',
 	 '@vuesax-alpha/nuxt',
+	 'nuxt-aos',
 	],
+
+	aos: {
+		duration: 200
+	},
 
 	css: ['~/assets/css/tailwind.css'],
 })
