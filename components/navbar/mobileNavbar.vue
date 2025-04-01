@@ -1,6 +1,6 @@
 <template>
 	<Transition name="drop">
-		<nav class="w-full p-5 z-[1000] min-[850px]:hidden top-0 fixed" v-if="isMobile">
+		<nav class="w-full p-5 z-[1000] min-[850px]:hidden top-0 fixed" v-show="isMobile">
 			<div class="bg-black/70 border-2 border-gray-900 border-solid rounded-xl backdrop-blur-[10px]">
 				<div class="w-full h-[100px] text-white font-bold flex justify-between items-center px-[35px]">
 					<div class="flex items-center text-xl">
