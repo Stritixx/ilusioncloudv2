@@ -52,13 +52,13 @@ body {
 
 
 .drop-enter-active {
-	animation: drop 3s;
+	animation: drop .3s;
 }
 
 
 
 .drop-leave-active {
-	animation: drop 3s reverse;
+	animation: drop .3s reverse;
 }
 
 
